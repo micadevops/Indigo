@@ -1,0 +1,99 @@
+{
+    "materials": [
+      {
+        "id": "cera",
+        "name": "Cera de Soja",
+        "category_id": "velas",
+        "unit": "kg",
+        "cost_per_unit": 460,
+        "supplier": "Proveedor Local",
+        "description": "$2.300 por 5kg = $460/kg",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "esencia",
+        "name": "Esencia Aromática",
+        "category_id": "velas",
+        "unit": "100ml",
+        "cost_per_unit": 290,
+        "supplier": "Aromas SA",
+        "description": "Esencias concentradas para velas",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "pabilo",
+        "name": "Pabilo de Algodón",
+        "category_id": "velas",
+        "unit": "unidad",
+        "cost_per_unit": 10,
+        "supplier": "Velas Express",
+        "description": "Pabilo encerado de algodón",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "envase",
+        "name": "Envase",
+        "category_id": "velas",
+        "unit": "unidad",
+        "cost_per_unit": 85,
+        "supplier": "Vidrios del Sur",
+        "description": "Envase de vidrio para velas",
+        "variable_cost": true,
+        "cost_by_product": {
+          "caramelera_pequena": 80,
+          "caramelera_vertical": 85,
+          "caramelera_grande": 140,
+          "vasos_normales": 85
+        },
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "packaging",
+        "name": "Packaging",
+        "category_id": "velas",
+        "unit": "unidad",
+        "cost_per_unit": 80,
+        "supplier": "Empaques Premium",
+        "description": "Caja y etiquetas para empaque final",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "base_jabon",
+        "name": "Base de Jabón Glicerinada",
+        "category_id": "jabones",
+        "unit": "kg",
+        "cost_per_unit": 350,
+        "supplier": "Jabones Naturales",
+        "description": "Base glicerinada transparente",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "colorante",
+        "name": "Colorante Natural",
+        "category_id": "jabones",
+        "unit": "100ml",
+        "cost_per_unit": 200,
+        "supplier": "Colores Vivos",
+        "description": "Colorante líquido base agua",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "fragancia",
+        "name": "Fragancia/Aceite Esencial",
+        "category_id": "jabones",
+        "unit": "100ml",
+        "cost_per_unit": 400,
+        "supplier": "Esencias Premium",
+        "description": "Aceites esenciales naturales",
+        "active": true,
+        "last_updated": "2024-01-01T00:00:00Z"
+      }
+    ]
+  }

@@ -1,0 +1,82 @@
+{
+    "products": [
+      {
+        "id": "caramelera_pequena",
+        "category_id": "velas",
+        "name": "Caramelera Pequeña",
+        "description": "Vela aromática en envase caramelera pequeño",
+        "suggested_weight": 80,
+        "unit": "gramos",
+        "materials": ["cera", "esencia", "pabilo", "envase", "packaging"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "caramelera_vertical",
+        "category_id": "velas",
+        "name": "Caramelera Vertical",
+        "description": "Vela aromática en envase caramelera vertical",
+        "suggested_weight": 100,
+        "unit": "gramos",
+        "materials": ["cera", "esencia", "pabilo", "envase", "packaging"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "caramelera_grande",
+        "category_id": "velas",
+        "name": "Caramelera Grande",
+        "description": "Vela aromática en envase caramelera grande",
+        "suggested_weight": 200,
+        "unit": "gramos",
+        "materials": ["cera", "esencia", "pabilo", "envase", "packaging"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "vasos_normales",
+        "category_id": "velas",
+        "name": "Vasos Normales",
+        "description": "Vela aromática en vaso de vidrio estándar",
+        "suggested_weight": 150,
+        "unit": "gramos",
+        "materials": ["cera", "esencia", "pabilo", "envase", "packaging"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "barra_pequena",
+        "category_id": "jabones",
+        "name": "Barra Pequeña",
+        "description": "Jabón artesanal en barra pequeña",
+        "suggested_weight": 80,
+        "unit": "gramos",
+        "materials": ["base_jabon", "colorante", "fragancia", "envase"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "barra_grande",
+        "category_id": "jabones",
+        "name": "Barra Grande",
+        "description": "Jabón artesanal en barra grande",
+        "suggested_weight": 120,
+        "unit": "gramos",
+        "materials": ["base_jabon", "colorante", "fragancia", "envase"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "liquido_250ml",
+        "category_id": "jabones",
+        "name": "Jabón Líquido 250ml",
+        "description": "Jabón líquido natural en envase de 250ml",
+        "suggested_weight": 250,
+        "unit": "ml",
+        "materials": ["base_jabon", "colorante", "fragancia", "envase"],
+        "active": true,
+        "created_at": "2024-01-01T00:00:00Z"
+      }
+    ]
+  }
+  

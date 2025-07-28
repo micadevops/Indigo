@@ -1,0 +1,111 @@
+{
+    "calculation_rules": [
+      {
+        "id": "velas_cera_rule",
+        "category_id": "velas",
+        "material_id": "cera",
+        "calculation_type": "percentage_weight",
+        "parameters": {
+          "percentage": 0.93,
+          "base_unit": "gramos",
+          "cost_unit": "kg",
+          "conversion_factor": 1000
+        },
+        "description": "93% del peso total de la vela es cera",
+        "active": true
+      },
+      {
+        "id": "velas_esencia_rule",
+        "category_id": "velas",
+        "material_id": "esencia",
+        "calculation_type": "percentage_weight",
+        "parameters": {
+          "percentage": 0.07,
+          "base_unit": "gramos",
+          "cost_unit": "100ml",
+          "conversion_factor": 100
+        },
+        "description": "7% del peso total de la vela es esencia",
+        "active": true
+      },
+      {
+        "id": "velas_pabilo_rule",
+        "category_id": "velas",
+        "material_id": "pabilo",
+        "calculation_type": "fixed_quantity",
+        "parameters": {
+          "quantity": 1,
+          "unit": "unidad"
+        },
+        "description": "Una unidad de pabilo por vela",
+        "active": true
+      },
+      {
+        "id": "velas_envase_rule",
+        "category_id": "velas",
+        "material_id": "envase",
+        "calculation_type": "variable_by_product",
+        "parameters": {
+          "quantity": 1,
+          "unit": "unidad",
+          "use_product_specific_cost": true
+        },
+        "description": "Un envase por vela, costo variable según tipo",
+        "active": true
+      },
+      {
+        "id": "velas_packaging_rule",
+        "category_id": "velas",
+        "material_id": "packaging",
+        "calculation_type": "fixed_quantity",
+        "parameters": {
+          "quantity": 1,
+          "unit": "unidad"
+        },
+        "description": "Un packaging por vela",
+        "active": true
+      },
+      {
+        "id": "jabones_base_rule",
+        "category_id": "jabones",
+        "material_id": "base_jabon",
+        "calculation_type": "percentage_weight",
+        "parameters": {
+          "percentage": 0.85,
+          "base_unit": "gramos",
+          "cost_unit": "kg",
+          "conversion_factor": 1000
+        },
+        "description": "85% del peso total del jabón es base",
+        "active": true
+      },
+      {
+        "id": "jabones_colorante_rule",
+        "category_id": "jabones",
+        "material_id": "colorante",
+        "calculation_type": "percentage_weight",
+        "parameters": {
+          "percentage": 0.02,
+          "base_unit": "gramos",
+          "cost_unit": "100ml",
+          "conversion_factor": 100
+        },
+        "description": "2% del peso total del jabón es colorante",
+        "active": true
+      },
+      {
+        "id": "jabones_fragancia_rule",
+        "category_id": "jabones",
+        "material_id": "fragancia",
+        "calculation_type": "percentage_weight",
+        "parameters": {
+          "percentage": 0.13,
+          "base_unit": "gramos",
+          "cost_unit": "100ml",  
+          "conversion_factor": 100
+        },
+        "description": "13% del peso total del jabón es fragancia",
+        "active": true
+      }
+    ]
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión - Calculadora de Costos</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/components/results.css">
+    <link rel="stylesheet" href="css/components/animations.css">
+</head>
+<body>
+    <div class="api-status" id="apiStatus">🔄 Conectando...</div>
+    
+    <div class="container">
+        <h1>🧮 Calculadora de Costos</h1>
+        
+        <div class="calculator-grid">
+            <!-- Formulario de entrada -->
+            <div class="form-section">
+                <h2>📋 Datos del Producto</h2>
+                
+                <div class="form-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category">
+                        <option value="">Selecciona una categoría...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Producto:</label>
+                    <select id="product" disabled>
+                        <option value="">Primero selecciona una categoría</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Peso (gramos):</label>
+                    <input type="number" id="weight" min="1" step="0.1" placeholder="Ej: 80">
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" min="1" value="1" placeholder="Ej: 1">
+                </div>
+
+                <div class="form-group">
+                    <label for="profit">Margen de Ganancia (%):</label>
+                    <input type="number" id="profit" min="0" step="1" value="50" placeholder="Ej: 50">
+                </div>
+
+                <button id="calculateBtn" disabled>🧮 Calcular Costo Completo</button>
+            </div>
+
+            <!-- Estimación rápida -->
+            <div class="form-section">
+                <h2>⚡ Estimación Rápida</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Obtén una estimación inmediata del precio de venta
+                </p>
+                
+                <div class="quick-estimate" id="quickEstimate">
+                    💰 Precio estimado: $0.00
+                </div>
+                
+                <button id="estimateBtn" disabled>⚡ Estimación Rápida</button>
+                
+                <div style="margin-top: 20px;">
+                    <h3>🎯 Comparador de Márgenes</h3>
+                    <div id="marginComparison" style="margin-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Calculando costos...</p>
+        </div>
+
+        <!-- Resultados -->
+        <div class="results hidden" id="results">
+            <h2>📊 Resultados del Cálculo</h2>
+            
+            <div class="cost-summary" id="costSummary">
+                <!-- Se llena dinámicamente -->
+            </div>
+
+            <div class="breakdown">
+                <h3>🔍 Desglose por Material</h3>
+                <table class="breakdown-table" id="breakdownTable">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Costo Unitario</th>
+                            <th>Costo Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="breakdownBody">
+                        <!-- Se llena dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <button class="floating-action" id="refreshData" title="Actualizar datos">🔄</button>
+
+    <!-- JavaScript -->
+    <script src="js/utils/constants.js"></script>
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components/calculator.js"></script>
+    <script src="js/components/quickEstimate.js"></script>
+    <script src="js/components/results.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
